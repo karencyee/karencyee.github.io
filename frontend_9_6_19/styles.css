@@ -1,0 +1,17 @@
+h1 {
+  font-size: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+
+p{
+  padding: 10px;
+  background-color: papayaWhip;
+}
+
+.special {
+  border: 1px solid green;
+}
+
+#user-name {
+  font-weight: bold;
+}
