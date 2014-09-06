@@ -36,18 +36,26 @@ a:hover {
 }
 
 #nav {
-	margin: 0 20px 0 0;
+	/*margin: 0 20px 0 0;*/
+	float: left;
+    width: 220px;
+    height: 90px;
+    margin: 5px;
   /* CHALLENGE 3: how could you get this to float to the left side of the screen? */
 }
 
 #main {
-	margin: 0;
   /*  CHALLENGE 3: how could you get this to float to the left side of the screen? */
+	margin-left: 1px;
   /* CHALLENGE 2: how could you give this element a one-pixel border down its left side? */
+  float: right;
+    width: 500px;
+    height: 90px;
+    margin: 2px;
 }
 
 #copyright {
-	margin-top: 30px;
+	margin-top: 1000px;
 	margin-bottom: 30px;
 }
 
@@ -56,3 +64,13 @@ a:hover {
 .clearfix:before, .clearfix:after { content:""; display:table; }
 .clearfix:after { clear:both; }
 .clearfix { zoom:1; }
+
+<script type="text/javascript">
+function replaceName() {
+	var myNewName = window.prompt('Pick a new name!');
+	document.getElementById('user-name').innerHTML = myNewName;
+}
+
+  document.onclick = replaceName;
+</script>
+
